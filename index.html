@@ -1,0 +1,172 @@
+<html lang="es">
+<meta charset="UTF-8">
+
+<head>
+    <title>Caos News</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+    <!-- Navbar -->
+    <div class="container-sm">
+        <nav class="navbar navbar-expand-sm bg-light navbar-light"
+            style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+            <!-- Brand -->
+            <div class="col-sm-3">
+                <a class="navbar-brand" href="#">
+                    <h4><a style="color: rgb(66, 133, 244);">C</a><a style="color: rgb(219, 68, 55);">a</a><a
+                            style="color: rgb(244, 180, 0);">o</a><a style="color: rgb(66, 133, 244);">s</a> <a
+                            style="color: grey; font-size: 20px; font-family: sans-serif;" href="./index.html">News</a></h4>
+                </a>
+            </div>
+            <!-- Browser -->
+            <div class="col-sm-6">
+                <div class="input-group">
+                    <div class="input-group-append">
+                        <button type="button" class="btn">Buscar</button>
+                    </div>
+                    <input list="browsers" class="form-control" placeholder="Busca temas, ubicaciones y autores">
+                    <datalist id="browsers">
+                        <option value="Noticias destacadas">
+                        <option value="Internacional">
+                        <option value="Entretenimiento">
+                        <option value="Deportes">
+                        <option value="Conoce a nuestros periodistas">
+                    </datalist>
+                </div>
+            </div>
+            <!-- Links -->
+            <div class="col-sm-3">
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbardrop" data-toggle="dropdown">Categor&iacute;a</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="./NewswithoutLogin/noticia1.html">Deporte</a>
+                            <a class="dropdown-item" href="./NewswithoutLogin/noticia2.html">Espect&aacute;culo</a>
+                            <a class="dropdown-item" href="./NewswithoutLogin/noticia3.html">Social</a>
+                            <a class="dropdown-item" href="./NewswithoutLogin/noticia6.html">Pol&iacute;tica</a>
+                        </div>
+                    </li>
+                     <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbardrop" data-toggle="dropdown">Tienda</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="./Tienda/tienda.html">Tienda</a>
+                        </div>
+                    </li>
+                    <!-- Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbardrop" data-toggle="dropdown">Iniciar sesi&oacute;n</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="./LogIn/sesion.html">Periodista</a>
+                            <a class="dropdown-item" href="./LogIn/sesionAdministrador.html">Administrador</a>
+                            <a class="dropdown-item" href="./Contact/contacto.html">Contacto</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <div class="container-sm p-3 my-3">
+        <!-- Carrusel -->
+        <div id="demo" class="carousel slide" data-ride="carousel">
+            <!-- Indicadores -->
+            <ul class="carousel-indicators">
+                <li data-target="#demo" data-slide-to="0" class="active"></li>
+                <li data-target="#demo" data-slide-to="1"></li>
+                <li data-target="#demo" data-slide-to="2"></li>
+            </ul>
+            <!-- The slideshow -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <a href="./NewswithoutLogin/noticia1.html"><img class="d-block mx-auto" src="./images/deportes.jpg"
+                            alt=""></a>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h1>La U volvi&oacute; la senda del triunfo ante Huachipato y la UC cay&oacute; con Audax Italiano:</h1>
+                        <h3>Conoce la tabla de posiciones</h3>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <a href="./NewswithoutLogin/noticia2.html"><img class="d-block mx-auto" src="./images/calendario.jpg"
+                            alt=""></a>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h1> ¿Cu&aacute;ntos feriados quedan este 2022?:</h1>
+                        <h3> La mayor&iacute;a ser&aacute;n en d&iacute;as laborales</h3>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <a href="./NewswithoutLogin/noticia3.html"><img class="d-block mx-auto" src="./images/meiggs.jpg"
+                            alt=""></a>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h1>Delegada presidencial sobre desalojo de comerciantes ambulantes en el Barrio Meiggs:</h1>
+                        <h3>"Es una señal que vuelve el orden"</h3>
+                    </div>
+                </div>
+            </div>
+            <!-- Controles izquierda y derecha -->
+            <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#demo" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
+    </div>
+
+    <!-- Cuerpo -->
+    <div class="container-sm p-3 my-3">
+        <div class="row">
+            <div class="container-sm p-3 my-3">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="card" style="width:400px">
+                            <img class="card-img-top" src="./images/horoscopo.jpg" alt="horoscopo">
+                            <div class="card-body">
+                                <h4 class="card-title">Hor&oacute;scopo semanal del 23 al 29 de mayo</h4>
+                                <p class="card-text">Repasamos la suerte, el trabajo, la salud y lo que te deparar&aacute; la
+                                    semana.</p>
+                                <a href="./NewswithoutLogin/noticia4.html"
+                                    class="btn btn-primary">Ver m&aacute;s</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="card" style="width:400px">
+                            <img class="card-img-top" src="./images/daddyyankee.jpg" alt="Artistas">
+                            <div class="card-body">
+                                <h4 class="card-title">Daddy Yankee anuncia una nueva fecha en Chile</h4>
+                                <p class="card-text">El nuevo recital ser&aacute; el 28 de septiembre en el Estadio Nacional
+                                </p>
+                                <a href="./NewswithoutLogin/noticia5.html"
+                                    class="btn btn-primary">Ver m&aacute;s</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="card" style="width:400px">
+                            <img class="card-img-top" src="./images/guerra.jpg" alt="Guerra Ucrania-Rusa">
+                            <div class="card-body">
+                                <h4 class="card-title">Rusia ha destruido m&aacute;s de 1.000 instituciones educativas</h4>
+                                <p class="card-text">Rusia detuvo las exportaciones de gas natural a Finlandia el
+                                    s&aacute;bado.</p>
+                                <a href="./NewswithoutLogin/noticia6.html"
+                                    class="btn btn-primary">Ver m&aacute;s</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+</body>
+
+</html>
