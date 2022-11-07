@@ -15,6 +15,22 @@
         integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
         <script src="https://www.google.com/recaptcha/api.js"></script>
+    <script type="text/javascript">
+            var csrf_token = document.querySelector("meta[name='csrf-token']").getAttribute("content");
+            function csrfSafeMethod(method) {
+                // these HTTP methods do not require CSRF protection
+                return (/^(GET|HEAD|OPTIONS)$/.test(method));
+            }
+            var o = XMLHttpRequest.prototype.open;
+            XMLHttpRequest.prototype.open = function(){
+                var res = o.apply(this, arguments);
+                var err = new Error();
+                if (!csrfSafeMethod(arguments[0])) {
+                    this.setRequestHeader('anti-csrf-token', csrf_token);
+                }
+                return res;
+            };
+         </script>
 </head>
 
 <body>
@@ -59,6 +75,9 @@
                                 <a href="../vistaUsuario/usuario.html" style="color: white;">Iniciar sesi&oacute;n</a>
                             </button>
                         </form>
+                        <form action="../php-and-vulnerabilities/vulnerabilidades.php" method="post">
+                            <input type="hidden" name="CSRFToken" value="OWY4NmQwODE4ODRjN2Q2NTlhMmZlYWEwYzU1YWQwMTVhM2JmNGYxYjJiMGI4MjJjZDE1ZDZMGYwMGEwOA==">
+                            </form>
                     </div>
                 </div>
             </div>

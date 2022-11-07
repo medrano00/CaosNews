@@ -11,4 +11,7 @@ function test_input($data) {
   $data = htmlspecialchars($data);
   return $data;
 }
+
+header("Access-Control-Allow-Origin: *");
+...
 ?>
